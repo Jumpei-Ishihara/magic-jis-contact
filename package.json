@@ -1,0 +1,17 @@
+{
+  "name": "keyboard-playground",
+  "version": "1.0.0",
+  "description": "An interactive contact form scene with an animated 80-key Mac JIS keyboard.",
+  "main": "app.js",
+  "scripts": {
+    "build": "esbuild app.js --bundle --minify --format=esm --outfile=dist/app.js",
+    "preview": "python3 -m http.server 8777 --bind 127.0.0.1 --directory dist",
+    "test": "node key-motion.test.mjs"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "three": "^0.186.1"
+  },
+  "private": true
+}
