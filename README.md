@@ -13,6 +13,10 @@
 
 フォームは画面デザインのみです。入力内容の送信・保存や問い合わせ用バックエンドはありません。
 
+## GitHub Pages
+
+`main`へのpush時に、GitHub Actionsがテストとビルドを行い、`dist/`をPagesへ公開します。公開処理はリポジトリのActionsタブから確認できます。
+
 ## ローカルで起動
 
 Node.jsとPython 3を使用します。
